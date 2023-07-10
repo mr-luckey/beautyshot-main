@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "860570541881",
+    "project_id": "beauty-shot",
+    "storage_bucket": "beauty-shot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860570541881:android:98db863c1e1626454792e8",
+        "android_client_info": {
+          "package_name": "com.application.beautyshot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860570541881-nlj6j55vlgjfqsoj0oj7hnrqfjjravb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.beautyshot",
+            "certificate_hash": "db727c0580e7c9766011e67ef95bcdc5d19c3113"
+          }
+        },
+        {
+          "client_id": "860570541881-1r1muvqpg5pkolcobm64q38las3uthvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPhk0NO89LXI3lou3KPRb4CQjEL4qaEBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860570541881-1r1muvqpg5pkolcobm64q38las3uthvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
