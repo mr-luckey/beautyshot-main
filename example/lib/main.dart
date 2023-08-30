@@ -29,7 +29,9 @@ class _MyAppState extends State<MyApp> {
   /// For Android Platform .glb format and for IOS .USDZ
   final String modelURL = io.Platform.isAndroid
       ? "https://firebasestorage.googleapis.com/v0/b/livvinyl-health-connector.appspot.com/o/catcow.glb?alt=media&token=da87cd4d-c9c1-4176-b1b3-a0b6fdc8734b"
-      : "https://firebasestorage.googleapis.com/v0/b/livvinyl-health-connector.appspot.com/o/Astronaut.usdz?alt=media&token=833344f6-7f17-4f21-aa5c-6f9fc5313928";
+      :"https://sketchfab.com/3d-models/covid-19-with-cdc-descriptions-eef1991d29934d1284bab88264bfea4a?utm_medium=embed&utm_campaign=share-popup&utm_content=eef1991d29934d1284bab88264bfea4a";
+      // :"https://developer.apple.com/augmented-reality/quick-look/models/biplane/toy_biplane_idle.usdz";
+      // : "https://firebasestorage.googleapis.com/v0/b/livvinyl-health-connector.appspot.com/o/Astronaut.usdz?alt=media&token=833344f6-7f17-4f21-aa5c-6f9fc5313928";
 
   @override
   void initState() {
@@ -49,7 +51,7 @@ class _MyAppState extends State<MyApp> {
       await NativeArViewer.launchAR(modelURL);
     } else if (io.Platform.isIOS) {
       /// Here File name is hardcoded, in realtime application you will use your own logic to locate USDZ file.
-      await NativeArViewer.launchAR("$documentDirectoryPath/Astronaut.usdz");
+      await NativeArViewer.launchAR("$documentDirectoryPath/covid-19-with-cdc-descriptions.usdz");
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Platform not supported')));
